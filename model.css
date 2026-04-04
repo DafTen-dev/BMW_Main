@@ -1,0 +1,87 @@
+header {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 75px;
+    text-align: center;
+    color: #FFD700; 
+    text-shadow: 0 0 10px #FFD700;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    background:#111;
+    width:260px;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 0 10px rgba(0,0,0,0.6);
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00aaff;
+}
+
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+    text-align:center;
+}
+
+.card-content h2{
+    margin:10px 0;
+    color:#00aaff;
+}
+
+.card-content p{
+    font-size:14px;
+    color:#ccc;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    background:#00aaff;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#008ecc;
+}
+.background{
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-image: url('src/BMW-model.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px) brightness(0.6);
+    z-index: -1;
+}
+
+h1{
+    text-align: center;
+    color: #00aaff;
+    text-shadow: 0 0 10px  #00aaff;
+}
+

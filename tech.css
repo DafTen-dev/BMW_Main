@@ -1,0 +1,55 @@
+
+body{
+    font-family: Arial;
+    color: white;
+    margin:40px;
+    height: 100vh;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:50px;
+    margin-top: 100px;
+    font-size: 55px;
+    color: #00aaff;
+    text-shadow: 0 0 10px #00aaff;
+}
+
+.section{
+    display:flex;
+    align-items:center;
+    margin-bottom:60px;
+    justify-content: space-between;
+    gap:30px;
+
+}
+
+.section img{
+    width: 500px;
+    border-radius:10px;
+    height: auto;
+}
+
+.text{
+    max-width:500px;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+.background {
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-image: url('src/BMWCMP.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px) brightness(0.6);
+    z-index: -1;
+}
+main{
+    height: 100vh;
+}
