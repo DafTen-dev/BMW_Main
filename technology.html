@@ -3,59 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMW Technology</title>
-    <link rel="stylesheet" href="tech.css">
+    <title>BMW M Series Technology</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="src/logo-web__1_-removebg-preview.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+             color: #00aaff;
+             text-shadow: 0 0 10px #00aaff;
+        }
+
+        header h1 {
+            margin: 50px;
+            font-size: 2.5rem;
+        }
+
+        .tech-section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .tech-card {
+            display: flex;
+            align-items: center;
+            background-color: rgba(44, 44, 44, 0.8);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            animation: fadein linear;
+            animation-timeline: view();
+            animation-range: entry 100% cover 0%;
+            }
+            @keyframes fadein {
+            from {
+                opacity: 0;
+                scale: 0.5;
+            }
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+            }
+
+        .tech-card:hover {
+          transform: translateY(-10px) scale(1.02);
+        }
+
+        .tech-card img {
+            width: 475px;
+            height: auto;
+            margin-right: 76px;
+            border-radius: 8px;
+        }
+
+        .tech-text h2 {
+            margin: 0 0 10px 0;
+            font-size: 2.4rem;
+            color: #ffffff;
+        }
+
+        .tech-text p {
+            margin: 0;
+            color: #ffffff;
+            line-height: 1.5;
+        }
+        .background {
+            position: fixed;
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            background-image: url('src/BMWCMP.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(6px) brightness(0.6);
+            z-index: -1;
+}
+
+        
+    </style>
 </head>
-<body > 
-     <nav>
+<body>
+    <div class="background"></div>
+ <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#model">Models</a></li>
-        <li><a href="index.html#performance">Performance</a></li>
+        <li><a href="model.html">Models</a></li>
+        <li><a href="#performance">Performance</a></li>
         <li><a href="technology.html">Technology</a></li>
-        <li><a href="registration.html">Contact</a></li>
+        <li><a href="registration.html">Sign Up</a></li>
       </ul>
     </nav>
-    <main>
-    <div class="background"></div>
-    <h1>BMW Car Technology</h1>
-<div class="section">
-    <img src="src/idrive.jpg" alt="BMW iDrive">
-    <div class="text">
-        <h2>BMW iDrive System</h2>
-        <p>
-        BMW iDrive is an advanced infotainment system used in BMW cars.
+<header>
+    <h1 style="font-size: 55px;">BMW M Series Technology</h1>
+</header>
+
+<div class="tech-section">
+
+    <div class="tech-card">
+        <img src="src/idrive.jpg" alt="Technology 1">
+        <div class="tech-text">
+            <h2>BMW iDrive System</h2>
+            <p> BMW iDrive is an advanced infotainment system used in BMW cars.
         It allows drivers to control navigation, music, and vehicle
-        settings using a touchscreen, controller knob, or voice command.
-        </p>
+        settings using a touchscreen, controller knob, or voice command.</p>
+        </div>
     </div>
+
+    <div class="tech-card">
+        <img src="src/driver assistance.jpg" alt="Technology 2">
+        <div class="tech-text">
+            <h2>Driver Assistance Technology</h2>
+            <p>BMW includes many smart safety systems such as adaptive cruise
+               control, lane departure warning, and parking assistant to help
+               drivers drive more safely.</p>
+        </div>
+    </div>
+
+    <div class="tech-card">
+        <img src="src/digital.jpg" alt="Technology 3">
+        <div class="tech-text">
+            <h2>Digital Dashboard</h2>
+            <p>Modern BMW vehicles use a fully digital instrument cluster
+               that displays speed, navigation information, and driving
+               data clearly for the driver.</p>
+        </div>
+    </div>
+
 </div>
 
-<div class="section reverse">
-    <img src="src/driver assistance.jpg" alt="Driver Assistance">
-    <div class="text">
-        <h2>Driver Assistance Technology</h2>
-        <p>
-        BMW includes many smart safety systems such as adaptive cruise
-        control, lane departure warning, and parking assistant to help
-        drivers drive more safely.
-        </p>
-    </div>
-</div>
-
-<div class="section">
-    <img src="src/digital.jpg" alt="Digital Dashboard">
-    <div class="text">
-        <h2>Digital Dashboard</h2>
-        <p>
-        Modern BMW vehicles use a fully digital instrument cluster
-        that displays speed, navigation information, and driving
-        data clearly for the driver.
-        </p>
-    </div>
-</div>
-</main>
 </body>
 </html>
