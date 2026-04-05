@@ -47,6 +47,8 @@ h1{
 }
 
 .member h2{
+    color:blue;
+    text-shadow: 0 0 10px blue;
     margin-top:12px;
     font-size:18px;
 }
